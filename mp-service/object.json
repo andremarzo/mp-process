@@ -1,0 +1,33 @@
+{
+    "myId": "pay-657b639c286630.65367428",
+    "value": 12999,
+    "payday": "2023-12-14",
+    "mainPaymentMethodId": "boleto",
+    "Customer": {
+        "name": "Lorem ipsum dolor sit amet.",
+        "document": "86302962838",
+        "emails": [
+            "teste3896email3953@galaxpay.com.br",
+            "teste2810email8302@galaxpay.com.br"
+        ],
+        "Address": {
+            "zipCode": "30411330",
+            "street": "Rua platina",
+            "number": "1330",
+            "complement": "2º andar",
+            "neighborhood": "Prado",
+            "city": "Belo Horizonte",
+            "state": "MG"
+        }
+    },
+    "PaymentMethodBoleto": {
+        "fine": 100,
+        "interest": 200,
+        "instructions": "Lorem ipsum dolor sit amet.",
+        "deadlineDays": 1,
+        "Agreement": {
+            "name": "Lorem ipsum",
+            "document": "012345678909"
+        }
+    }
+}
