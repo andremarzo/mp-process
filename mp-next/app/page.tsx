@@ -1,10 +1,6 @@
 "use client";
 import { useCallback } from "react";
-import {
-  initMercadoPago,
-  CardPayment,
-  getInstallments,
-} from "@mercadopago/sdk-react";
+import { initMercadoPago, CardPayment } from "@mercadopago/sdk-react";
 import {
   ICardPaymentBrickPayer,
   ICardPaymentFormData,
@@ -18,17 +14,7 @@ initMercadoPago("ACCESS-KEY", {
 export default function Home() {
   const handleSubmit = useCallback(
     async (param: ICardPaymentFormData<ICardPaymentBrickPayer>) => {
-      // await handlePayment(param);
-      console.log("===============SEM ERROS AQUI===============");
-
-      const installments = await getInstallments({
-        amount: "100",
-        bin: "11223344",
-        locale: "pt-BR",
-        processingMode: "gateway",
-      });
-
-      console.log(installments);
+      await handlePayment(param);
     },
     []
   );

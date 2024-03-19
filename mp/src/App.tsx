@@ -7,7 +7,7 @@ import {
 } from "@mercadopago/sdk-react/bricks/cardPayment/type";
 import { handlePayment } from "./service";
 
-initMercadoPago("TEST-b40e5ee7-a002-4e02-9bfc-b05f22cabb69", {
+initMercadoPago("ACCESS-KEY", {
   locale: "pt-BR",
 });
 
